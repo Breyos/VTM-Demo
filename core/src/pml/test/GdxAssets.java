@@ -13,10 +13,13 @@ import org.slf4j.LoggerFactory;
 
 import java.io.InputStream;
 
+/**
+ * LibGDX asset adapter for VTM
+ */
 public class GdxAssets extends AssetAdapter {
     private static final Logger log = LoggerFactory.getLogger(GdxAssets.class);
 
-    static String pathPrefix = "";
+    private static String pathPrefix = "";
 
     private GdxAssets(String path) {
         pathPrefix = path;
